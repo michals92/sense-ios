@@ -19,6 +19,9 @@ final class MainViewModel: ObservableObject {
     @Published var account: Account?
     @Published var phrase = ""
     private var seedPhrase = ConcreteSeedPhrase()
+    @Published var accountInfo: AccountInfo?
+    @Published var balance: String?
+
 
     init() {
         self.solana = Solana(router: network, accountStorage: accountStorage)
@@ -30,21 +33,22 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    func getAccountInfo() {
-        guard let account = account else {
-            return
-        }
-// Hi4zJd7Vzxg8aYDyiPt31Jn4yyFszgxpw2f8RX7BdgjK
-        solana.api.getAccountInfo(account: account.publicKey.base58EncodedString, decodedTo: AccountInfo.self) { result in
-            print(result)
-            switch result {
-            case.success(let accountInfo):
-                print(accountInfo)
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
+//    func getAccountInfo() {
+//        guard let account = account else {
+//            return
+//        }
+//
+//        solana.api.getAccountInfo(account: account.publicKey.base58EncodedString, decodedTo: AccountInfo.self) { result in
+//            print(result)
+//            switch result {
+//            case.success(let accountInfo):
+//                print(accountInfo)
+//             //   self.accountInfo = accountInfo.data.value
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
 
     func saveAccount() {
         let phrase = phrase.components(separatedBy: " ")
@@ -78,29 +82,49 @@ final class MainViewModel: ObservableObject {
             switch result {
             case .success(let amount):
                 print(amount)
+
+                DispatchQueue.main.async {
+                    self.balance = "\(Double(amount)*0.000000001). SOL"
+                }
             case .failure(let error):
                 print(error)
             }
          }
     }
 
-    func requestAirdrop() {
+    func requestAirdrop(_ value: Int = 10) async -> AirdropResponse? {
         guard let account = account else {
-            return
+            return nil
         }
 
-        solana.api.requestAirdrop(account: account.publicKey.base58EncodedString, lamports: 10) { result in
-            switch result {
-            case .success(let value):
-                print(value)
-            case .failure(let error):
-                print(error)
-            }
+        let json: [String: Any] = ["jsonrpc": "2.0",
+                                   "id": 1,
+                                   "method":"requestAirdrop",
+                                   "params": ["8ZrjwMyQhiiJkpZbpQSc3faDWMnVJUacBtku6qLtp8Kc", 1000000000]]
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+
+        guard let url = URL(string: "https://api.devnet.solana.com") else {
+            return nil
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let decoded = try JSONDecoder().decode(AirdropResponse.self, from: data)
+            return decoded
+        } catch {
+            print(error)
+            return nil
         }
     }
 
     func createAccount() {
-        let phrase = getSeedPhrase()
+        let phrase = seedPhrase.getSeedPhrase()
         print(phrase)
         guard let account = Account(phrase: phrase, network: .devnet) else {
             print("failed to create account!")
@@ -115,8 +139,11 @@ final class MainViewModel: ObservableObject {
             print(error)
         }
     }
+}
 
-    private func getSeedPhrase() -> SeedPhraseCollection {
-        seedPhrase.getSeedPhrase()
-    }
+
+struct AirdropResponse: Decodable {
+    let jsonrpc: String
+    let result: String
+    let id: Int
 }

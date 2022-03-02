@@ -11,13 +11,18 @@ import Solana
 struct ContentView: View {
     @StateObject var viewModel = MainViewModel()
 
+    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+
     // let mnemonic = "tissue ghost fashion plastic become parrot permit icon convince thought place describe"
 
     var body: some View {
         VStack {
             if viewModel.account != nil {
+                Text(viewModel.account?.publicKey.base58EncodedString ?? "")
+                Text(viewModel.balance ?? "")
+                    
                 Button {
-                    viewModel.getAccountInfo()
+                    viewModel.getBalance()
                 } label: {
                     Text("get account info")
                 }
@@ -31,11 +36,13 @@ struct ContentView: View {
                 Button {
                     viewModel.getBalance()
                 } label: {
-                    Text("balance account")
+                    Text("update balance info")
                 }
 
                 Button {
-                    viewModel.requestAirdrop()
+                    Task {
+                        await viewModel.requestAirdrop()
+                    }
                 } label: {
                     Text("airdrop 10 sol")
                 }
@@ -55,7 +62,10 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            viewModel.getAccountInfo()
+            viewModel.getBalance()
+        }
+        .onReceive(timer) { _ in
+            viewModel.getBalance()
         }
     }
 }
