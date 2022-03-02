@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */; };
+		71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
+		71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
 		71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1827CE815700B26E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0727CE815600B26E55 /* ContentView.swift */; };
@@ -18,6 +20,8 @@
 		71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2427CE8A1300B26E55 /* MainViewModel.swift */; };
 		71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2827CE8C6500B26E55 /* RxSolana */; };
 		71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2A27CE8C6500B26E55 /* Solana */; };
+		71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */; };
+		71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */; };
 		E825DB2913CB27EC24D7F12C /* Pods_sense_ios__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,7 @@
 		3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		71757BF527CF8A82005536B0 /* SeedPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhrase.swift; sourceTree = "<group>"; };
 		71C22B0627CE815600B26E55 /* sense_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sense_iosApp.swift; sourceTree = "<group>"; };
 		71C22B0727CE815600B26E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71C22B0827CE815700B26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		71C22B1327CE815700B26E55 /* sense-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sense-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C22B1527CE815700B26E55 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		71C22B2427CE8A1300B26E55 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWalletStorage.swift; sourceTree = "<group>"; };
 		D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				71C22B0627CE815600B26E55 /* sense_iosApp.swift */,
+				71757BF527CF8A82005536B0 /* SeedPhrase.swift */,
 				71C22B0727CE815600B26E55 /* ContentView.swift */,
 				71C22B2427CE8A1300B26E55 /* MainViewModel.swift */,
+				71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */,
 				71C22B0827CE815700B26E55 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -106,7 +114,6 @@
 				D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */,
 				6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,7 +198,7 @@
 			);
 			mainGroup = 71C22B0027CE815600B26E55;
 			packageReferences = (
-				71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */,
+				71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */,
 			);
 			productRefGroup = 71C22B0E27CE815700B26E55 /* Products */;
 			projectDirPath = "";
@@ -291,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */,
+				71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1827CE815700B26E55 /* ContentView.swift in Sources */,
 				71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */,
 				71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */,
@@ -301,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */,
+				71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1927CE815700B26E55 /* ContentView.swift in Sources */,
 				71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */,
 				71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */,
@@ -575,7 +586,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */ = {
+		71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ajamaica/Solana.Swift";
 			requirement = {
@@ -588,12 +599,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		71C22B2827CE8C6500B26E55 /* RxSolana */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */;
 			productName = RxSolana;
 		};
 		71C22B2A27CE8C6500B26E55 /* Solana */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */;
 			productName = Solana;
 		};
 /* End XCSwiftPackageProductDependency section */

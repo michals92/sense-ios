@@ -31,7 +31,13 @@ struct ContentView: View {
                 Button {
                     viewModel.getBalance()
                 } label: {
-                    Text(" balance account")
+                    Text("balance account")
+                }
+
+                Button {
+                    viewModel.requestAirdrop()
+                } label: {
+                    Text("airdrop 10 sol")
                 }
             } else {
                 TextField("Enter account address", text: $viewModel.phrase)
@@ -40,7 +46,16 @@ struct ContentView: View {
                 } label: {
                     Text("connect")
                 }
+                Button {
+                    viewModel.createAccount()
+                } label: {
+                    Text("create new account")
+                }
             }
-        }.padding()
+        }
+        .padding()
+        .onAppear {
+            viewModel.getAccountInfo()
+        }
     }
 }
