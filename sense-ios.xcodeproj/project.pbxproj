@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AD10C2AFD7A36748493A7B8 /* Pods_sense_ios__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */; };
+		0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */; };
 		71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1827CE815700B26E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0727CE815600B26E55 /* ContentView.swift */; };
@@ -16,14 +16,17 @@
 		71C22B1B27CE815700B26E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C22B0827CE815700B26E55 /* Assets.xcassets */; };
 		71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2427CE8A1300B26E55 /* MainViewModel.swift */; };
 		71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2427CE8A1300B26E55 /* MainViewModel.swift */; };
-		E3850AA034D45946380DA761 /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */; };
+		71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2827CE8C6500B26E55 /* RxSolana */; };
+		71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2A27CE8C6500B26E55 /* Solana */; };
+		E825DB2913CB27EC24D7F12C /* Pods_sense_ios__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
-		25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		71C22B0627CE815600B26E55 /* sense_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sense_iosApp.swift; sourceTree = "<group>"; };
 		71C22B0727CE815600B26E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71C22B0827CE815700B26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,8 +34,7 @@
 		71C22B1327CE815700B26E55 /* sense-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sense-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C22B1527CE815700B26E55 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		71C22B2427CE8A1300B26E55 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).debug.xcconfig"; sourceTree = "<group>"; };
-		BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3850AA034D45946380DA761 /* Pods_sense_ios__iOS_.framework in Frameworks */,
+				71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */,
+				71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */,
+				0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,32 +52,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD10C2AFD7A36748493A7B8 /* Pods_sense_ios__macOS_.framework in Frameworks */,
+				E825DB2913CB27EC24D7F12C /* Pods_sense_ios__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		240AB70C089AE8E655A3F4B8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */,
-				02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */,
-				25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */,
-				094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		71C22B0027CE815600B26E55 = {
 			isa = PBXGroup;
 			children = (
 				71C22B0527CE815600B26E55 /* Shared */,
 				71C22B1427CE815700B26E55 /* macOS */,
 				71C22B0E27CE815700B26E55 /* Products */,
-				240AB70C089AE8E655A3F4B8 /* Pods */,
 				7D309208EE5C61FC12C22B71 /* Frameworks */,
+				7B6E88AE680D61B51E2E512C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +98,23 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		7B6E88AE680D61B51E2E512C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */,
+				6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */,
+				D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */,
+				6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D309208EE5C61FC12C22B71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */,
-				BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */,
+				3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */,
+				2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,17 +126,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71C22B1E27CE815700B26E55 /* Build configuration list for PBXNativeTarget "sense-ios (iOS)" */;
 			buildPhases = (
-				98B37C2FE30BB7643A6C3972 /* [CP] Check Pods Manifest.lock */,
+				17CFB6FF418802D52DE4696F /* [CP] Check Pods Manifest.lock */,
 				71C22B0927CE815700B26E55 /* Sources */,
 				71C22B0A27CE815700B26E55 /* Frameworks */,
 				71C22B0B27CE815700B26E55 /* Resources */,
-				FABD745CEE99885E5D7DE2E8 /* [CP] Embed Pods Frameworks */,
+				F26E12D14809A86EB2CC3F1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "sense-ios (iOS)";
+			packageProductDependencies = (
+				71C22B2827CE8C6500B26E55 /* RxSolana */,
+				71C22B2A27CE8C6500B26E55 /* Solana */,
+			);
 			productName = "sense-ios (iOS)";
 			productReference = 71C22B0D27CE815700B26E55 /* sense-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +190,9 @@
 				Base,
 			);
 			mainGroup = 71C22B0027CE815600B26E55;
+			packageReferences = (
+				71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */,
+			);
 			productRefGroup = 71C22B0E27CE815700B26E55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -211,6 +223,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17CFB6FF418802D52DE4696F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sense-ios (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48DA39CD29640B2B63CE4685 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,29 +267,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98B37C2FE30BB7643A6C3972 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sense-ios (iOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FABD745CEE99885E5D7DE2E8 /* [CP] Embed Pods Frameworks */ = {
+		F26E12D14809A86EB2CC3F1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,7 +423,7 @@
 		};
 		71C22B1F27CE815700B26E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */;
+			baseConfigurationReference = 25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,7 +454,7 @@
 		};
 		71C22B2027CE815700B26E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */;
+			baseConfigurationReference = 6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +486,7 @@
 		};
 		71C22B2227CE815700B26E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */;
+			baseConfigurationReference = D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -503,7 +515,7 @@
 		};
 		71C22B2327CE815700B26E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */;
+			baseConfigurationReference = 6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +573,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ajamaica/Solana.Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71C22B2827CE8C6500B26E55 /* RxSolana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */;
+			productName = RxSolana;
+		};
+		71C22B2A27CE8C6500B26E55 /* Solana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana.Swift" */;
+			productName = Solana;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71C22B0127CE815600B26E55 /* Project object */;
 }
