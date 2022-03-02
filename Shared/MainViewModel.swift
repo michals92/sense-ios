@@ -84,7 +84,7 @@ final class MainViewModel: ObservableObject {
                 print(amount)
 
                 DispatchQueue.main.async {
-                    self.balance = "\(Double(amount)*0.000000001). SOL"
+                    self.balance = "\(Double(amount)*0.000000001) SOL"
                 }
             case .failure(let error):
                 print(error)
@@ -100,7 +100,7 @@ final class MainViewModel: ObservableObject {
         let json: [String: Any] = ["jsonrpc": "2.0",
                                    "id": 1,
                                    "method":"requestAirdrop",
-                                   "params": ["8ZrjwMyQhiiJkpZbpQSc3faDWMnVJUacBtku6qLtp8Kc", 1000000000]]
+                                   "params": [account.publicKey.base58EncodedString, value*1000000000]]
 
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
@@ -138,6 +138,10 @@ final class MainViewModel: ObservableObject {
         case .failure(let error):
             print(error)
         }
+    }
+
+    func mint() {
+
     }
 }
 
