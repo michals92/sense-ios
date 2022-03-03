@@ -19,7 +19,6 @@ struct ImportWalletView: View {
     @State private var enableFaceID: Bool = true
     @FocusState private var textFieldFocused: Field?
 
-
     var textEditor: some View {
         ZStack {
             if seedText.isEmpty {
@@ -58,6 +57,7 @@ struct ImportWalletView: View {
             Spacer()
             Button {
                 print("import wallet tapped")
+                viewModel.saveAccount(phrase: seedText)
             } label: {
                 Text("IMPORT")
                     .font(.system(size: 13, weight: .bold))

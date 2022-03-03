@@ -54,9 +54,9 @@ final class MainViewModel: ObservableObject {
 //        }
 //    }
 
-    func saveAccount() {
-        let phrase = phrase.components(separatedBy: " ")
-        let account = Account(phrase: phrase, network: .devnet)
+    func saveAccount(phrase: String) {
+        let phraseArray = phrase.components(separatedBy: " ")
+        let account = Account(phrase: phraseArray, network: .devnet)
 
         if let account = account {
             switch accountStorage.save(account) {

@@ -47,12 +47,7 @@ struct ContentView: View {
                     Text("airdrop 1 SOL")
                 }
             } else {
-                TextField("Enter account address", text: $viewModel.phrase)
-                Button {
-                    viewModel.saveAccount()
-                } label: {
-                    Text("connect")
-                }
+                Text("add transition to import wallet")
                 Button {
                     viewModel.createAccount()
                 } label: {
