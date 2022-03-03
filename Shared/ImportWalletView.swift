@@ -49,7 +49,10 @@ struct ImportWalletView: View {
 
     var body: some View {
         VStack {
-            Text("Import ").font(.system(size: 25)) + Text("wallet ").font(.system(size: 25, weight: .bold)) + Text("using seed ").font(.system(size: 25)) + Text("phrase").font(.system(size: 25, weight: .bold))
+            Text("Import ").font(.system(size: 25)) +
+            Text("wallet ").font(.system(size: 25, weight: .bold)) +
+            Text("using seed ").font(.system(size: 25)) +
+            Text("phrase").font(.system(size: 25, weight: .bold))
             textEditor
                 .background(Color(uiColor: UIColor(hex: "#F7F7F7") ?? .white))
             Toggle("Enable FaceID", isOn: $enableFaceID)

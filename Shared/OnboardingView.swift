@@ -14,7 +14,10 @@ struct OnboardingView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("A new way to ").font(.system(size: 25)) + Text("connect people ").font(.system(size: 25, weight: .bold)) + Text("with the ").font(.system(size: 25)) + Text("same interest").font(.system(size: 25, weight: .bold))
+                Text("A new way to ").font(.system(size: 25)) +
+                Text("connect people ").font(.system(size: 25, weight: .bold)) +
+                Text("with the ").font(.system(size: 25)) +
+                Text("same interest").font(.system(size: 25, weight: .bold))
                 Spacer()
                 Image("web")
                 Spacer()

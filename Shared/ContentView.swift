@@ -23,6 +23,7 @@ struct ContentView: View {
 
                 if let tokenValues = viewModel.tokenValues {
                     ForEach(tokenValues, id: \.self) { item in
+                        // swiftlint:disable line_length
                         Text(item.account.data.parsed.info.tokenAmount.uiAmountString + " " + item.account.data.parsed.info.mint)
                     }
                 }

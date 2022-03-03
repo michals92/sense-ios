@@ -18,7 +18,7 @@ protocol SeedPhrase {
 class ConcreteSeedPhrase: SeedPhrase {
     private var seedPhase: SeedPhraseCollection?
     private func createSeedFrase(strength: Int = 256,
-                         wordlist: [String] = Wordlists.english) -> [String] {
+                                 wordlist: [String] = Wordlists.english) -> [String] {
         let mnemonic = Mnemonic(strength: strength, wordlist: wordlist)
         return mnemonic.phrase
     }
@@ -28,6 +28,7 @@ class ConcreteSeedPhrase: SeedPhrase {
     }
 
     func getSeedPhrase() -> SeedPhraseCollection {
+        // swiftlint:disable identifier_name
         guard let _seedPhase = seedPhase else {
             seedPhase = createSeedFrase()
             return getSeedPhrase()

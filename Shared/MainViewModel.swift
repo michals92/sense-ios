@@ -42,7 +42,8 @@ final class MainViewModel: ObservableObject {
 //            return
 //        }
 //
-//        solana.api.getAccountInfo(account: account.publicKey.base58EncodedString, decodedTo: AccountInfo.self) { result in
+//        solana.api.getAccountInfo(account: account.publicKey.base58EncodedString,
+//                                  decodedTo: AccountInfo.self) { result in
 //            print(result)
 //            switch result {
 //            case.success(let accountInfo):
@@ -79,8 +80,8 @@ final class MainViewModel: ObservableObject {
         guard let account = account else {
             return
         }
-        
-        solana.api.getBalance(account: account.publicKey.base58EncodedString){ result in
+
+        solana.api.getBalance(account: account.publicKey.base58EncodedString) { result in
             print(result)
 
             switch result {
@@ -103,7 +104,7 @@ final class MainViewModel: ObservableObject {
 
         let json: [String: Any] = ["jsonrpc": "2.0",
                                    "id": 1,
-                                   "method":"requestAirdrop",
+                                   "method": "requestAirdrop",
                                    "params": [account.publicKey.base58EncodedString, value*1000000000]]
 
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -183,7 +184,6 @@ final class MainViewModel: ObservableObject {
         }
     }
 }
-
 
 struct AirdropResponse: Decodable {
     let jsonrpc: String
