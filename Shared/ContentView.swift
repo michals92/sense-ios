@@ -16,55 +16,67 @@ struct ContentView: View {
     // let mnemonic = "tissue ghost fashion plastic become parrot permit icon convince thought place describe"
 
     var body: some View {
-        VStack {
-            if viewModel.account != nil {
-                Text(viewModel.account?.publicKey.base58EncodedString ?? "")
-                Text(viewModel.balance ?? "")
+        TabView {
+            VStack {
+                if viewModel.account != nil {
+                    Text(viewModel.account?.publicKey.base58EncodedString ?? "")
+                    Text(viewModel.balance ?? "")
 
-                if let tokenValues = viewModel.tokenValues {
-                    ForEach(tokenValues, id: \.self) { item in
-                        // swiftlint:disable line_length
-                        Text(item.account.data.parsed.info.tokenAmount.uiAmountString + " " + item.account.data.parsed.info.mint)
+                    if let tokenValues = viewModel.tokenValues {
+                        ForEach(tokenValues, id: \.self) { item in
+                            // swiftlint:disable line_length
+                            Text(item.account.data.parsed.info.tokenAmount.uiAmountString + " " + item.account.data.parsed.info.mint)
+                        }
+                    }
+
+                    Button {
+                        viewModel.clear()
+                    } label: {
+                        Text("remove account")
+                    }
+
+                    Button {
+                        viewModel.getBalance()
+                    } label: {
+                        Text("update balance info")
+                    }
+
+                    Button {
+                        Task {
+                            await viewModel.requestAirdrop()
+                        }
+                    } label: {
+                        Text("airdrop 1 SOL")
+                    }
+                } else {
+                    Text("add transition to import wallet")
+                    Button {
+                        viewModel.createAccount()
+                    } label: {
+                        Text("create new account")
                     }
                 }
-
-                Button {
-                    viewModel.clear()
-                } label: {
-                    Text("remove account")
-                }
-
-                Button {
-                    viewModel.getBalance()
-                } label: {
-                    Text("update balance info")
-                }
-
-                Button {
-                    Task {
-                        await viewModel.requestAirdrop()
-                    }
-                } label: {
-                    Text("airdrop 1 SOL")
-                }
-            } else {
-                Text("add transition to import wallet")
-                Button {
-                    viewModel.createAccount()
-                } label: {
-                    Text("create new account")
+            }
+            .padding()
+            .frame(
+                minWidth: 0,
+                maxWidth: .infinity,
+                minHeight: 0,
+                maxHeight: .infinity,
+                alignment: .top
+            )
+            .onAppear {
+                viewModel.getBalance()
+                Task {
+                    await viewModel.getBallanceForMyCoin()
                 }
             }
-        }
-        .padding()
-        .onAppear {
-            viewModel.getBalance()
-            Task {
-                await viewModel.getBallanceForMyCoin()
+            .onReceive(timer) { _ in
+                viewModel.getBalance()
+            }.tabItem {
+                Image(systemName: "message")
+                Text("Chatrooms")
             }
-        }
-        .onReceive(timer) { _ in
-            viewModel.getBalance()
         }
     }
 }
