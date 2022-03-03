@@ -12,6 +12,7 @@ import KeychainSwift
 import CryptoKit
 
 final class MainViewModel: ObservableObject {
+    // let mnemonic = "tissue ghost fashion plastic become parrot permit icon convince thought place describe"
 
     let network = NetworkingRouter(endpoint: .devnetSolana)
     let accountStorage = KeychainAccountStorageModule()
@@ -24,8 +25,10 @@ final class MainViewModel: ObservableObject {
     @Published var accountInfo: AccountInfo?
     @Published var balance: String?
     @Published var tokenValues: [Value]?
+    @Published var splTokens: [SPLToken]?
 
     let urlString = "https://api.devnet.solana.com"
+    let solscanUrlString = "https://api-devnet.solscan.io"
 
     init() {
         self.solana = Solana(router: network, accountStorage: accountStorage)
@@ -36,24 +39,6 @@ final class MainViewModel: ObservableObject {
             print(error.localizedDescription)
         }
     }
-
-//    func getAccountInfo() {
-//        guard let account = account else {
-//            return
-//        }
-//
-//        solana.api.getAccountInfo(account: account.publicKey.base58EncodedString,
-//                                  decodedTo: AccountInfo.self) { result in
-//            print(result)
-//            switch result {
-//            case.success(let accountInfo):
-//                print(accountInfo)
-//             //   self.accountInfo = accountInfo.data.value
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
-//    }
 
     func saveAccount(phrase: String) {
         let phraseArray = phrase.components(separatedBy: " ")
@@ -145,44 +130,68 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    func getBallanceForMyCoin() async {
-    //    let tokenId = "375Ao9weFrhgzFLLZh6ccyjkmEGjV3QffpQnopTtJyqo"
+    @MainActor
+    func getCoinList() async {
 
-        guard let account = account else {
+        var urlComponents = URLComponents(string: solscanUrlString + "/account/tokens")!
+        let urlQueryItems = [URLQueryItem(name: "address", value: "DKTiu6g3wQo9xff5agLch8p54VmiXQR8yM8Me1WhL9VT"),
+                             URLQueryItem(name: "price", value: "1")]
+
+        urlComponents.queryItems = urlQueryItems
+
+        guard let url = urlComponents.url else {
             return
         }
-
-        let json: [String: Any] = ["jsonrpc": "2.0",
-                                   "id": 1,
-                                   "method": "getTokenAccountsByOwner",
-                                   "params": [
-                                    account.publicKey.base58EncodedString,
-                                    ["mint": "375Ao9weFrhgzFLLZh6ccyjkmEGjV3QffpQnopTtJyqo"],
-                                    ["encoding": "jsonParsed"]]]
-
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-
-        guard let url = URL(string: urlString) else {
-            return
-        }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = jsonData
 
         do {
-            let (data, _) = try await URLSession.shared.data(for: request)
-            let decoded = try JSONDecoder().decode(TokenAccountResult.self, from: data)
-            DispatchQueue.main.async {
-                self.tokenValues = decoded.result.value
-            }
-            return
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let decoder = JSONDecoder()
+            let decoded = try decoder.decode(SolscanTokenResponse.self, from: data)
+            splTokens = decoded.data
         } catch {
             print(error)
             return
         }
     }
+
+//    func getBallanceForMyCoin() async {
+//        let tokenId = "375Ao9weFrhgzFLLZh6ccyjkmEGjV3QffpQnopTtJyqo"
+//
+//        guard let account = account else {
+//            return
+//        }
+//
+//        let json: [String: Any] = ["jsonrpc": "2.0",
+//                                   "id": 1,
+//                                   "method": "getTokenAccountsByOwner",
+//                                   "params": [
+//                                    account.publicKey.base58EncodedString,
+//                                    ["mint": tokenId],
+//                                    ["encoding": "jsonParsed"]]]
+//
+//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+//
+//        guard let url = URL(string: urlString) else {
+//            return
+//        }
+//
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        request.httpBody = jsonData
+//
+//        do {
+//            let (data, _) = try await URLSession.shared.data(for: request)
+//            let decoded = try JSONDecoder().decode(TokenAccountResult.self, from: data)
+//            DispatchQueue.main.async {
+//                self.tokenValues = decoded.result.value
+//            }
+//            return
+//        } catch {
+//            print(error)
+//            return
+//        }
+//    }
 }
 
 struct AirdropResponse: Decodable {

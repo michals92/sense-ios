@@ -26,6 +26,12 @@
 		71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1127D10AD8005536B0 /* UIColor+Extension.swift */; };
 		71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1127D10AD8005536B0 /* UIColor+Extension.swift */; };
 		71757C1627D10E65005536B0 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 71757C1527D10E65005536B0 /* Introspect */; };
+		71757C1927D12274005536B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1827D12274005536B0 /* ProfileView.swift */; };
+		71757C1A27D12274005536B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1827D12274005536B0 /* ProfileView.swift */; };
+		71757C1C27D12313005536B0 /* ChatlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1B27D12313005536B0 /* ChatlistView.swift */; };
+		71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1B27D12313005536B0 /* ChatlistView.swift */; };
+		71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
+		71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
 		71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1827CE815700B26E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0727CE815600B26E55 /* ContentView.swift */; };
@@ -54,6 +60,9 @@
 		71757C0827D0F6F3005536B0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletView.swift; sourceTree = "<group>"; };
 		71757C1127D10AD8005536B0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		71757C1827D12274005536B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		71757C1B27D12313005536B0 /* ChatlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatlistView.swift; sourceTree = "<group>"; };
+		71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolscanTokenModel.swift; sourceTree = "<group>"; };
 		71C22B0627CE815600B26E55 /* sense_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sense_iosApp.swift; sourceTree = "<group>"; };
 		71C22B0727CE815600B26E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71C22B0827CE815700B26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71757C2127D135A3005536B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71C22B0727CE815600B26E55 /* ContentView.swift */,
+				71757C1827D12274005536B0 /* ProfileView.swift */,
+				71757C1B27D12313005536B0 /* ChatlistView.swift */,
+				71757C0827D0F6F3005536B0 /* OnboardingView.swift */,
+				71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71757C2227D135CB005536B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */,
+				71757BF827CFE91A005536B0 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		71C22B0027CE815600B26E55 = {
 			isa = PBXGroup;
 			children = (
@@ -105,14 +135,12 @@
 		71C22B0527CE815600B26E55 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				71C22B0627CE815600B26E55 /* sense_iosApp.swift */,
 				71757C0227D0F4CD005536B0 /* AppDelegate.swift */,
-				71757BF527CF8A82005536B0 /* SeedPhrase.swift */,
-				71C22B0727CE815600B26E55 /* ContentView.swift */,
-				71757C0827D0F6F3005536B0 /* OnboardingView.swift */,
-				71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */,
+				71C22B0627CE815600B26E55 /* sense_iosApp.swift */,
+				71757C2127D135A3005536B0 /* Views */,
 				71C22B2427CE8A1300B26E55 /* MainViewModel.swift */,
-				71757BF827CFE91A005536B0 /* Model.swift */,
+				71757BF527CF8A82005536B0 /* SeedPhrase.swift */,
+				71757C2227D135CB005536B0 /* Model */,
 				71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */,
 				71757C1127D10AD8005536B0 /* UIColor+Extension.swift */,
 				71757C0527D0F598005536B0 /* GoogleService-Info.plist */,
@@ -361,11 +389,14 @@
 				71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1827CE815700B26E55 /* ContentView.swift in Sources */,
 				71757BF927CFE91A005536B0 /* Model.swift in Sources */,
+				71757C1C27D12313005536B0 /* ChatlistView.swift in Sources */,
 				71757C0C27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
 				71757C0327D0F4CD005536B0 /* AppDelegate.swift in Sources */,
 				71757C0927D0F6F3005536B0 /* OnboardingView.swift in Sources */,
 				71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */,
+				71757C1927D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
 				71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,11 +409,14 @@
 				71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1927CE815700B26E55 /* ContentView.swift in Sources */,
 				71757BFA27CFE91A005536B0 /* Model.swift in Sources */,
+				71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */,
 				71757C0D27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
 				71757C0427D0F4CD005536B0 /* AppDelegate.swift in Sources */,
 				71757C0A27D0F6F3005536B0 /* OnboardingView.swift in Sources */,
 				71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */,
+				71757C1A27D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
 				71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
