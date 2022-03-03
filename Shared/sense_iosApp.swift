@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct sense_iosApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @ObservedObject var viewModel = MainViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if viewModel.account != nil {
+                ContentView(viewModel: viewModel)
+            } else {
+                OnboardingView(viewModel: viewModel)
+            }
         }
     }
 }

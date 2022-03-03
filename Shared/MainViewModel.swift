@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Solana
 import KeychainSwift
+import CryptoKit
 
 final class MainViewModel: ObservableObject {
 
@@ -16,12 +17,15 @@ final class MainViewModel: ObservableObject {
     let accountStorage = KeychainAccountStorageModule()
     let solana: Solana
 
+    private var seedPhrase = ConcreteSeedPhrase()
+
     @Published var account: Account?
     @Published var phrase = ""
-    private var seedPhrase = ConcreteSeedPhrase()
     @Published var accountInfo: AccountInfo?
     @Published var balance: String?
+    @Published var tokenValues: [Value]?
 
+    let urlString = "https://api.devnet.solana.com"
 
     init() {
         self.solana = Solana(router: network, accountStorage: accountStorage)
@@ -104,7 +108,7 @@ final class MainViewModel: ObservableObject {
 
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
-        guard let url = URL(string: "https://api.devnet.solana.com") else {
+        guard let url = URL(string: urlString) else {
             return nil
         }
 
@@ -140,8 +144,43 @@ final class MainViewModel: ObservableObject {
         }
     }
 
-    func mint() {
+    func getBallanceForMyCoin() async {
+    //    let tokenId = "375Ao9weFrhgzFLLZh6ccyjkmEGjV3QffpQnopTtJyqo"
 
+        guard let account = account else {
+            return
+        }
+
+        let json: [String: Any] = ["jsonrpc": "2.0",
+                                   "id": 1,
+                                   "method": "getTokenAccountsByOwner",
+                                   "params": [
+                                    account.publicKey.base58EncodedString,
+                                    ["mint": "375Ao9weFrhgzFLLZh6ccyjkmEGjV3QffpQnopTtJyqo"],
+                                    ["encoding": "jsonParsed"]]]
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+
+        guard let url = URL(string: urlString) else {
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let decoded = try JSONDecoder().decode(TokenAccountResult.self, from: data)
+            DispatchQueue.main.async {
+                self.tokenValues = decoded.result.value
+            }
+            return
+        } catch {
+            print(error)
+            return
+        }
     }
 }
 

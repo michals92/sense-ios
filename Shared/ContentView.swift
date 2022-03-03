@@ -9,7 +9,7 @@ import SwiftUI
 import Solana
 
 struct ContentView: View {
-    @StateObject var viewModel = MainViewModel()
+    @ObservedObject var viewModel: MainViewModel
 
     private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
 
@@ -20,11 +20,11 @@ struct ContentView: View {
             if viewModel.account != nil {
                 Text(viewModel.account?.publicKey.base58EncodedString ?? "")
                 Text(viewModel.balance ?? "")
-                    
-                Button {
-                    viewModel.getBalance()
-                } label: {
-                    Text("get account info")
+
+                if let tokenValues = viewModel.tokenValues {
+                    ForEach(tokenValues, id: \.self) { item in
+                        Text(item.account.data.parsed.info.tokenAmount.uiAmountString + " " + item.account.data.parsed.info.mint)
+                    }
                 }
 
                 Button {
@@ -44,7 +44,7 @@ struct ContentView: View {
                         await viewModel.requestAirdrop()
                     }
                 } label: {
-                    Text("airdrop 10 sol")
+                    Text("airdrop 1 SOL")
                 }
             } else {
                 TextField("Enter account address", text: $viewModel.phrase)
@@ -63,6 +63,9 @@ struct ContentView: View {
         .padding()
         .onAppear {
             viewModel.getBalance()
+            Task {
+                await viewModel.getBallanceForMyCoin()
+            }
         }
         .onReceive(timer) { _ in
             viewModel.getBalance()
