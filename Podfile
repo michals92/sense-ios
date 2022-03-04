@@ -6,7 +6,6 @@ target 'sense-ios (iOS)' do
   use_frameworks!
 
 	pod 'KeychainSwift', '~> 20.0'
-
 end
 
 target 'sense-ios (macOS)' do

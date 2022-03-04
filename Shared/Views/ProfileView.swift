@@ -22,12 +22,12 @@ struct ProfileView: View {
 
                 if viewModel.account != nil {
                     List {
-                        Section("Wallet") {
+                        Section("My tokens") {
                             Text(viewModel.account?.publicKey.base58EncodedString ?? "")
                             Text(viewModel.balance ?? "")
                         }.listRowBackground(Spacer().background(Color(uiColor: UIColor(hex: "#EEEEEE") ?? .lightGray)))
 
-                        Section("Settings") {
+                        Section("Debug settings") {
                             Button {
                                 Task {
                                     await viewModel.requestAirdrop()

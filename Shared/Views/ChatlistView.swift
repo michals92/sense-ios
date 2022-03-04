@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatlistView: View {
     @ObservedObject var viewModel: MainViewModel
+    @StateObject var homeData = HomeModel()
 
     var body: some View {
         NavigationView {
@@ -16,6 +17,10 @@ struct ChatlistView: View {
                 List {
                     ForEach(splTokens, id: \.self) {
                         Text("\($0.tokenAddress)")
+                    }
+
+                    ForEach(homeData.messages) {
+                        Text($0.message)
                     }
                 }
                 .navigationTitle("Chatrooms")
@@ -27,6 +32,8 @@ struct ChatlistView: View {
                     }
                 }
             }
+        }.onAppear {
+            homeData.onAppear()
         }
     }
 }

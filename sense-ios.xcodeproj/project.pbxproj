@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */; };
+		714E66D427D25BDF00FC32B6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */; };
+		714E66D627D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */; };
+		714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
+		714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
 		71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
 		71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
 		71757BF927CFE91A005536B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF827CFE91A005536B0 /* Model.swift */; };
 		71757BFA27CFE91A005536B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF827CFE91A005536B0 /* Model.swift */; };
-		71757BFD27D0F494005536B0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 71757BFC27D0F494005536B0 /* FirebaseCrashlytics */; };
-		71757BFF27D0F494005536B0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 71757BFE27D0F494005536B0 /* FirebaseDatabase */; };
-		71757C0127D0F494005536B0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 71757C0027D0F494005536B0 /* FirebaseFirestore */; };
 		71757C0327D0F4CD005536B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0227D0F4CD005536B0 /* AppDelegate.swift */; };
 		71757C0427D0F4CD005536B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0227D0F4CD005536B0 /* AppDelegate.swift */; };
 		71757C0627D0F598005536B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71757C0527D0F598005536B0 /* GoogleService-Info.plist */; };
@@ -32,6 +33,8 @@
 		71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1B27D12313005536B0 /* ChatlistView.swift */; };
 		71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
 		71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
+		71B2D19927D247FF00253B4F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D19827D247FF00253B4F /* HomeModel.swift */; };
+		71B2D19A27D247FF00253B4F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D19827D247FF00253B4F /* HomeModel.swift */; };
 		71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1827CE815700B26E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0727CE815600B26E55 /* ContentView.swift */; };
@@ -53,6 +56,7 @@
 		3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		714E66D727D25EBF00FC32B6 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		71757BF527CF8A82005536B0 /* SeedPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhrase.swift; sourceTree = "<group>"; };
 		71757BF827CFE91A005536B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		71757C0227D0F4CD005536B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		71757C1827D12274005536B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		71757C1B27D12313005536B0 /* ChatlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatlistView.swift; sourceTree = "<group>"; };
 		71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolscanTokenModel.swift; sourceTree = "<group>"; };
+		71B2D19827D247FF00253B4F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		71C22B0627CE815600B26E55 /* sense_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sense_iosApp.swift; sourceTree = "<group>"; };
 		71C22B0727CE815600B26E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71C22B0827CE815700B26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,13 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71757BFF27D0F494005536B0 /* FirebaseDatabase in Frameworks */,
 				71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */,
-				71757BFD27D0F494005536B0 /* FirebaseCrashlytics in Frameworks */,
 				71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */,
+				714E66D427D25BDF00FC32B6 /* FirebaseCrashlytics in Frameworks */,
+				714E66D627D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				71757C1627D10E65005536B0 /* Introspect in Frameworks */,
 				0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */,
-				71757C0127D0F494005536B0 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				71C22B0727CE815600B26E55 /* ContentView.swift */,
 				71757C1827D12274005536B0 /* ProfileView.swift */,
 				71757C1B27D12313005536B0 /* ChatlistView.swift */,
+				714E66D727D25EBF00FC32B6 /* ChatRow.swift */,
 				71757C0827D0F6F3005536B0 /* OnboardingView.swift */,
 				71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */,
 			);
@@ -117,6 +122,7 @@
 			children = (
 				71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */,
 				71757BF827CFE91A005536B0 /* Model.swift */,
+				71B2D19827D247FF00253B4F /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,10 +214,9 @@
 			packageProductDependencies = (
 				71C22B2827CE8C6500B26E55 /* RxSolana */,
 				71C22B2A27CE8C6500B26E55 /* Solana */,
-				71757BFC27D0F494005536B0 /* FirebaseCrashlytics */,
-				71757BFE27D0F494005536B0 /* FirebaseDatabase */,
-				71757C0027D0F494005536B0 /* FirebaseFirestore */,
 				71757C1527D10E65005536B0 /* Introspect */,
+				714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */,
+				714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = "sense-ios (iOS)";
 			productReference = 71C22B0D27CE815700B26E55 /* sense-ios.app */;
@@ -264,8 +269,8 @@
 			mainGroup = 71C22B0027CE815600B26E55;
 			packageReferences = (
 				71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */,
-				71757BFB27D0F494005536B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				71757C1427D10E65005536B0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 71C22B0E27CE815700B26E55 /* Products */;
 			projectDirPath = "";
@@ -388,6 +393,7 @@
 				71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */,
 				71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1827CE815700B26E55 /* ContentView.swift in Sources */,
+				71B2D19927D247FF00253B4F /* HomeModel.swift in Sources */,
 				71757BF927CFE91A005536B0 /* Model.swift in Sources */,
 				71757C1C27D12313005536B0 /* ChatlistView.swift in Sources */,
 				71757C0C27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
@@ -397,6 +403,7 @@
 				71757C1927D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */,
 				71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */,
 				71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +415,7 @@
 				71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */,
 				71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1927CE815700B26E55 /* ContentView.swift in Sources */,
+				71B2D19A27D247FF00253B4F /* HomeModel.swift in Sources */,
 				71757BFA27CFE91A005536B0 /* Model.swift in Sources */,
 				71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */,
 				71757C0D27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
@@ -417,6 +425,7 @@
 				71757C1A27D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */,
 				71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */,
 				71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,7 +700,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		71757BFB27D0F494005536B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -718,20 +727,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		71757BFC27D0F494005536B0 /* FirebaseCrashlytics */ = {
+		714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71757BFB27D0F494005536B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
-		71757BFE27D0F494005536B0 /* FirebaseDatabase */ = {
+		714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 71757BFB27D0F494005536B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		71757C0027D0F494005536B0 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 71757BFB27D0F494005536B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
+			package = 714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 		71757C1527D10E65005536B0 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
