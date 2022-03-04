@@ -11,16 +11,20 @@ struct ChatlistView: View {
     @ObservedObject var viewModel: MainViewModel
 
     var body: some View {
-        if let splTokens = viewModel.splTokens {
-            List {
-                ForEach(splTokens, id: \.self) {
-                    Text("\($0.tokenAddress)")
+        NavigationView {
+            if let splTokens = viewModel.splTokens {
+                List {
+                    ForEach(splTokens, id: \.self) {
+                        Text("\($0.tokenAddress)")
+                    }
                 }
-            }
-        } else {
-            Text("loading").onAppear {
-                Task {
-                    await viewModel.getCoinList()
+                .navigationTitle("Chatrooms")
+                .navigationBarTitleDisplayMode(.inline)
+            } else {
+                Text("Loading").onAppear {
+                    Task {
+                        await viewModel.getCoinList()
+                    }
                 }
             }
         }
