@@ -12,6 +12,10 @@
 		714E66D627D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */; };
 		714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
 		714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
+		714E66DB27D37C1F00FC32B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DA27D37C1F00FC32B6 /* Message.swift */; };
+		714E66DC27D37C1F00FC32B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DA27D37C1F00FC32B6 /* Message.swift */; };
+		714E66DE27D37DF600FC32B6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DD27D37DF600FC32B6 /* ChatView.swift */; };
+		714E66DF27D37DF600FC32B6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DD27D37DF600FC32B6 /* ChatView.swift */; };
 		71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
 		71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
 		71757BF927CFE91A005536B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF827CFE91A005536B0 /* Model.swift */; };
@@ -57,6 +61,8 @@
 		6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		714E66D727D25EBF00FC32B6 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		714E66DA27D37C1F00FC32B6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		714E66DD27D37DF600FC32B6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		71757BF527CF8A82005536B0 /* SeedPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhrase.swift; sourceTree = "<group>"; };
 		71757BF827CFE91A005536B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		71757C0227D0F4CD005536B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 				71C22B0727CE815600B26E55 /* ContentView.swift */,
 				71757C1827D12274005536B0 /* ProfileView.swift */,
 				71757C1B27D12313005536B0 /* ChatlistView.swift */,
+				714E66DD27D37DF600FC32B6 /* ChatView.swift */,
 				714E66D727D25EBF00FC32B6 /* ChatRow.swift */,
 				71757C0827D0F6F3005536B0 /* OnboardingView.swift */,
 				71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */,
@@ -123,6 +130,7 @@
 				71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */,
 				71757BF827CFE91A005536B0 /* Model.swift */,
 				71B2D19827D247FF00253B4F /* HomeModel.swift */,
+				714E66DA27D37C1F00FC32B6 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,7 +410,9 @@
 				71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */,
 				71757C1927D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				714E66DE27D37DF600FC32B6 /* ChatView.swift in Sources */,
 				71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66DB27D37C1F00FC32B6 /* Message.swift in Sources */,
 				714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */,
 				71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
@@ -424,7 +434,9 @@
 				71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */,
 				71757C1A27D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				714E66DF27D37DF600FC32B6 /* ChatView.swift in Sources */,
 				71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66DC27D37C1F00FC32B6 /* Message.swift in Sources */,
 				714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */,
 				71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);

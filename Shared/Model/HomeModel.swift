@@ -14,12 +14,7 @@ class HomeModel: ObservableObject {
     @AppStorage("Summer") var username: String?
 
     func onAppear() {
-//        if username == nil {
-//            //TODO: - set public key to active user
-//            print("no wallet!")
-//        } else {
-            readAllMessages()
-      //  }
+        readAllMessages()
     }
 
     func readAllMessages() {
@@ -49,11 +44,15 @@ class HomeModel: ObservableObject {
             }
         }
     }
-}
 
-struct Message: Codable, Identifiable, Hashable {
-    @DocumentID var id: String?
-    var message: String
-    var user: String
-    var timestamp: Date
+    func sendMessage(message: String) {
+        do {
+            let messageModel = Message(message: message, user: username ?? "", timestamp: Date())
+            try Firestore.firestore().collection("messages").addDocument(from: messageModel, completion: { error in
+                print(error)
+            })
+        } catch {
+            print(error)
+        }
+    }
 }

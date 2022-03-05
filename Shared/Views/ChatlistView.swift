@@ -9,31 +9,30 @@ import SwiftUI
 
 struct ChatlistView: View {
     @ObservedObject var viewModel: MainViewModel
-    @StateObject var homeData = HomeModel()
+    @State private var selectionValue: String? {
+        didSet {
+            selection = true
+        }
+    }
+    @State private var selection: Bool = false
 
     var body: some View {
         NavigationView {
-            if let splTokens = viewModel.splTokens {
-                List {
-                    ForEach(splTokens, id: \.self) {
+            NavigationLink(destination: ChatView(viewModel: viewModel), isActive: $selection) {
+                if let splTokens = viewModel.splTokens {
+                    List(splTokens, id: \.self, selection: $selectionValue) {
                         Text("\($0.tokenAddress)")
                     }
-
-                    ForEach(homeData.messages) {
-                        Text($0.message)
-                    }
-                }
-                .navigationTitle("Chatrooms")
-                .navigationBarTitleDisplayMode(.inline)
-            } else {
-                Text("Loading").onAppear {
-                    Task {
-                        await viewModel.getCoinList()
+                    .navigationTitle("Chatrooms")
+                    .navigationBarTitleDisplayMode(.inline)
+                } else {
+                    Text("Loading").onAppear {
+                        Task {
+                            await viewModel.getCoinList()
+                        }
                     }
                 }
             }
-        }.onAppear {
-            homeData.onAppear()
         }
     }
 }
