@@ -11,7 +11,8 @@ import FirebaseFirestoreSwift
 
 class HomeModel: ObservableObject {
     @Published var messages: [Message] = []
-    @AppStorage("Summer") var username: String?
+    @Published var message: String = ""
+    let accountStorage = KeychainAccountStorageModule()
 
     func onAppear() {
         readAllMessages()
@@ -45,11 +46,18 @@ class HomeModel: ObservableObject {
         }
     }
 
-    func sendMessage(message: String) {
+    func sendMessage() {
         do {
-            let messageModel = Message(message: message, user: username ?? "", timestamp: Date())
+            guard case .success(let account) = accountStorage.account else {
+                return
+            }
+
+            let messageModel = Message(message: message, user: account.publicKey.base58EncodedString, timestamp: Date())
             try Firestore.firestore().collection("messages").addDocument(from: messageModel, completion: { error in
                 print(error)
+                DispatchQueue.main.async {
+                    self.message = ""
+                }
             })
         } catch {
             print(error)

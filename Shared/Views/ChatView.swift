@@ -10,7 +10,6 @@ import SwiftUI
 struct ChatView: View {
     @StateObject var homeData = HomeModel()
     @ObservedObject var viewModel: MainViewModel
-    @State var message: String = ""
 
     @State var tabBarController: UITabBarController?
 
@@ -18,16 +17,18 @@ struct ChatView: View {
         VStack {
             List {
                 ForEach(homeData.messages) {
-                    Text($0.message)
+                    ChatRow(message: $0, user: viewModel.account?.publicKey.base58EncodedString ?? "")
                 }
             }
             HStack {
-                TextField("Message", text: $message)
+                TextField("Message", text: $homeData.message)
                 Button {
-                    homeData.sendMessage(message: message)
+                    homeData.sendMessage()
                 } label: {
-                    Text("send")
+                    Text("SEND")
+                        .font(.caption2)
                 }
+                .background(Color.blue)
             }
             .padding()
         }.onAppear {

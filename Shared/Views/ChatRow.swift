@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ChatRow: View {
     var message: Message
-    @AppStorage("Summer") var user = ""
+    var user: String
 
     var body: some View {
         HStack(spacing: 15) {
             if message.user != user {
-                Nickname(name: message.user)
+                Nickname(name: message.message, user: message.user)
             } else {
                 Spacer()
             }
@@ -31,7 +31,7 @@ struct ChatRow: View {
 
 struct Nickname: View {
     var name: String
-    @AppStorage("Summer") var user = ""
+    var user: String
 
     var body: some View {
         Text(String(name.first ?? Character("")))

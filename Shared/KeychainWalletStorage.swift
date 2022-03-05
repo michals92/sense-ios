@@ -14,7 +14,7 @@ enum SolanaAccountStorageError: Error {
 }
 
 struct KeychainAccountStorageModule: SolanaAccountStorage {
-    private let tokenKey = "Summer"
+    private let tokenKey = "username"
     private let keychain = KeychainSwift()
 
     func save(_ account: Account) -> Result<Void, Error> {
