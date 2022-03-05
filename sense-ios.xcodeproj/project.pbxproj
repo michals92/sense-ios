@@ -7,7 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AD10C2AFD7A36748493A7B8 /* Pods_sense_ios__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */; };
+		0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */; };
+		714E66D427D25BDF00FC32B6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */; };
+		714E66D627D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */; };
+		714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
+		714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66D727D25EBF00FC32B6 /* ChatRow.swift */; };
+		714E66DB27D37C1F00FC32B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DA27D37C1F00FC32B6 /* Message.swift */; };
+		714E66DC27D37C1F00FC32B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DA27D37C1F00FC32B6 /* Message.swift */; };
+		714E66DE27D37DF600FC32B6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DD27D37DF600FC32B6 /* ChatView.swift */; };
+		714E66DF27D37DF600FC32B6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E66DD27D37DF600FC32B6 /* ChatView.swift */; };
+		71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
+		71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF527CF8A82005536B0 /* SeedPhrase.swift */; };
+		71757BF927CFE91A005536B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF827CFE91A005536B0 /* Model.swift */; };
+		71757BFA27CFE91A005536B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757BF827CFE91A005536B0 /* Model.swift */; };
+		71757C0327D0F4CD005536B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0227D0F4CD005536B0 /* AppDelegate.swift */; };
+		71757C0427D0F4CD005536B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0227D0F4CD005536B0 /* AppDelegate.swift */; };
+		71757C0627D0F598005536B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71757C0527D0F598005536B0 /* GoogleService-Info.plist */; };
+		71757C0727D0F598005536B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71757C0527D0F598005536B0 /* GoogleService-Info.plist */; };
+		71757C0927D0F6F3005536B0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0827D0F6F3005536B0 /* OnboardingView.swift */; };
+		71757C0A27D0F6F3005536B0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0827D0F6F3005536B0 /* OnboardingView.swift */; };
+		71757C0C27D0FDC0005536B0 /* ImportWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */; };
+		71757C0D27D0FDC0005536B0 /* ImportWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */; };
+		71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1127D10AD8005536B0 /* UIColor+Extension.swift */; };
+		71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1127D10AD8005536B0 /* UIColor+Extension.swift */; };
+		71757C1627D10E65005536B0 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 71757C1527D10E65005536B0 /* Introspect */; };
+		71757C1927D12274005536B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1827D12274005536B0 /* ProfileView.swift */; };
+		71757C1A27D12274005536B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1827D12274005536B0 /* ProfileView.swift */; };
+		71757C1C27D12313005536B0 /* ChatlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1B27D12313005536B0 /* ChatlistView.swift */; };
+		71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1B27D12313005536B0 /* ChatlistView.swift */; };
+		71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
+		71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */; };
+		71B2D19927D247FF00253B4F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D19827D247FF00253B4F /* HomeModel.swift */; };
+		71B2D19A27D247FF00253B4F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D19827D247FF00253B4F /* HomeModel.swift */; };
 		71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0627CE815600B26E55 /* sense_iosApp.swift */; };
 		71C22B1827CE815700B26E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B0727CE815600B26E55 /* ContentView.swift */; };
@@ -16,23 +47,42 @@
 		71C22B1B27CE815700B26E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C22B0827CE815700B26E55 /* Assets.xcassets */; };
 		71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2427CE8A1300B26E55 /* MainViewModel.swift */; };
 		71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2427CE8A1300B26E55 /* MainViewModel.swift */; };
-		E3850AA034D45946380DA761 /* Pods_sense_ios__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */; };
+		71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2827CE8C6500B26E55 /* RxSolana */; };
+		71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */ = {isa = PBXBuildFile; productRef = 71C22B2A27CE8C6500B26E55 /* Solana */; };
+		71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */; };
+		71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */; };
+		E825DB2913CB27EC24D7F12C /* Pods_sense_ios__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
-		25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).release.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		714E66D727D25EBF00FC32B6 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		714E66DA27D37C1F00FC32B6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		714E66DD27D37DF600FC32B6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		71757BF527CF8A82005536B0 /* SeedPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhrase.swift; sourceTree = "<group>"; };
+		71757BF827CFE91A005536B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		71757C0227D0F4CD005536B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71757C0527D0F598005536B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71757C0827D0F6F3005536B0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletView.swift; sourceTree = "<group>"; };
+		71757C1127D10AD8005536B0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		71757C1827D12274005536B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		71757C1B27D12313005536B0 /* ChatlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatlistView.swift; sourceTree = "<group>"; };
+		71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolscanTokenModel.swift; sourceTree = "<group>"; };
+		71B2D19827D247FF00253B4F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		71C22B0627CE815600B26E55 /* sense_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sense_iosApp.swift; sourceTree = "<group>"; };
 		71C22B0727CE815600B26E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71C22B0827CE815700B26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71C22B0D27CE815700B26E55 /* sense-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sense-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C22B0D27CE815700B26E55 /* Sollama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sollama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C22B1327CE815700B26E55 /* sense-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sense-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C22B1527CE815700B26E55 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		71C22B2427CE8A1300B26E55 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (iOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (iOS)/Pods-sense-ios (iOS).debug.xcconfig"; sourceTree = "<group>"; };
-		BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sense_ios__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWalletStorage.swift; sourceTree = "<group>"; };
+		D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sense-ios (macOS).debug.xcconfig"; path = "Target Support Files/Pods-sense-ios (macOS)/Pods-sense-ios (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3850AA034D45946380DA761 /* Pods_sense_ios__iOS_.framework in Frameworks */,
+				71C22B2B27CE8C6500B26E55 /* Solana in Frameworks */,
+				71C22B2927CE8C6500B26E55 /* RxSolana in Frameworks */,
+				714E66D427D25BDF00FC32B6 /* FirebaseCrashlytics in Frameworks */,
+				714E66D627D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				71757C1627D10E65005536B0 /* Introspect in Frameworks */,
+				0B0AF3D135214EE6465C99BF /* Pods_sense_ios__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,22 +103,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD10C2AFD7A36748493A7B8 /* Pods_sense_ios__macOS_.framework in Frameworks */,
+				E825DB2913CB27EC24D7F12C /* Pods_sense_ios__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		240AB70C089AE8E655A3F4B8 /* Pods */ = {
+		71757C2127D135A3005536B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */,
-				02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */,
-				25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */,
-				094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */,
+				71C22B0727CE815600B26E55 /* ContentView.swift */,
+				71757C1827D12274005536B0 /* ProfileView.swift */,
+				71757C1B27D12313005536B0 /* ChatlistView.swift */,
+				714E66DD27D37DF600FC32B6 /* ChatView.swift */,
+				714E66D727D25EBF00FC32B6 /* ChatRow.swift */,
+				71757C0827D0F6F3005536B0 /* OnboardingView.swift */,
+				71757C0B27D0FDC0005536B0 /* ImportWalletView.swift */,
 			);
-			path = Pods;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71757C2227D135CB005536B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71757C1E27D130CF005536B0 /* SolscanTokenModel.swift */,
+				71757BF827CFE91A005536B0 /* Model.swift */,
+				71B2D19827D247FF00253B4F /* HomeModel.swift */,
+				714E66DA27D37C1F00FC32B6 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		71C22B0027CE815600B26E55 = {
@@ -72,17 +141,23 @@
 				71C22B0527CE815600B26E55 /* Shared */,
 				71C22B1427CE815700B26E55 /* macOS */,
 				71C22B0E27CE815700B26E55 /* Products */,
-				240AB70C089AE8E655A3F4B8 /* Pods */,
 				7D309208EE5C61FC12C22B71 /* Frameworks */,
+				7B6E88AE680D61B51E2E512C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		71C22B0527CE815600B26E55 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				71757C0227D0F4CD005536B0 /* AppDelegate.swift */,
 				71C22B0627CE815600B26E55 /* sense_iosApp.swift */,
-				71C22B0727CE815600B26E55 /* ContentView.swift */,
+				71757C2127D135A3005536B0 /* Views */,
 				71C22B2427CE8A1300B26E55 /* MainViewModel.swift */,
+				71757BF527CF8A82005536B0 /* SeedPhrase.swift */,
+				71757C2227D135CB005536B0 /* Model */,
+				71C22B2E27CF7DC700B26E55 /* KeychainWalletStorage.swift */,
+				71757C1127D10AD8005536B0 /* UIColor+Extension.swift */,
+				71757C0527D0F598005536B0 /* GoogleService-Info.plist */,
 				71C22B0827CE815700B26E55 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -91,7 +166,7 @@
 		71C22B0E27CE815700B26E55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71C22B0D27CE815700B26E55 /* sense-ios.app */,
+				71C22B0D27CE815700B26E55 /* Sollama.app */,
 				71C22B1327CE815700B26E55 /* sense-ios.app */,
 			);
 			name = Products;
@@ -105,11 +180,22 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		7B6E88AE680D61B51E2E512C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */,
+				6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */,
+				D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */,
+				6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D309208EE5C61FC12C22B71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70C44502B26F33B1EEF3E653 /* Pods_sense_ios__iOS_.framework */,
-				BA42E8524F76E4B731417D74 /* Pods_sense_ios__macOS_.framework */,
+				3EE9604D7810BF9D324486CB /* Pods_sense_ios__iOS_.framework */,
+				2AF4A07C89F8A82D6C2FABB5 /* Pods_sense_ios__macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,19 +207,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71C22B1E27CE815700B26E55 /* Build configuration list for PBXNativeTarget "sense-ios (iOS)" */;
 			buildPhases = (
-				98B37C2FE30BB7643A6C3972 /* [CP] Check Pods Manifest.lock */,
+				71757C1727D11067005536B0 /* Swiftlint */,
+				17CFB6FF418802D52DE4696F /* [CP] Check Pods Manifest.lock */,
 				71C22B0927CE815700B26E55 /* Sources */,
 				71C22B0A27CE815700B26E55 /* Frameworks */,
 				71C22B0B27CE815700B26E55 /* Resources */,
-				FABD745CEE99885E5D7DE2E8 /* [CP] Embed Pods Frameworks */,
+				F26E12D14809A86EB2CC3F1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "sense-ios (iOS)";
+			packageProductDependencies = (
+				71C22B2827CE8C6500B26E55 /* RxSolana */,
+				71C22B2A27CE8C6500B26E55 /* Solana */,
+				71757C1527D10E65005536B0 /* Introspect */,
+				714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */,
+				714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = "sense-ios (iOS)";
-			productReference = 71C22B0D27CE815700B26E55 /* sense-ios.app */;
+			productReference = 71C22B0D27CE815700B26E55 /* Sollama.app */;
 			productType = "com.apple.product-type.application";
 		};
 		71C22B1227CE815700B26E55 /* sense-ios (macOS) */ = {
@@ -181,6 +275,11 @@
 				Base,
 			);
 			mainGroup = 71C22B0027CE815600B26E55;
+			packageReferences = (
+				71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */,
+				71757C1427D10E65005536B0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 71C22B0E27CE815700B26E55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C22B1A27CE815700B26E55 /* Assets.xcassets in Resources */,
+				71757C0627D0F598005536B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,12 +305,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C22B1B27CE815700B26E55 /* Assets.xcassets in Resources */,
+				71757C0727D0F598005536B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17CFB6FF418802D52DE4696F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sense-ios (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48DA39CD29640B2B63CE4685 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,7 +356,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98B37C2FE30BB7643A6C3972 /* [CP] Check Pods Manifest.lock */ = {
+		71757C1727D11067005536B0 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,21 +364,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sense-ios (iOS)-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		FABD745CEE99885E5D7DE2E8 /* [CP] Embed Pods Frameworks */ = {
+		F26E12D14809A86EB2CC3F1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,9 +398,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71757BF627CF8A82005536B0 /* SeedPhrase.swift in Sources */,
+				71C22B2F27CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1827CE815700B26E55 /* ContentView.swift in Sources */,
+				71B2D19927D247FF00253B4F /* HomeModel.swift in Sources */,
+				71757BF927CFE91A005536B0 /* Model.swift in Sources */,
+				71757C1C27D12313005536B0 /* ChatlistView.swift in Sources */,
+				71757C0C27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
+				71757C0327D0F4CD005536B0 /* AppDelegate.swift in Sources */,
+				71757C0927D0F6F3005536B0 /* OnboardingView.swift in Sources */,
 				71C22B1627CE815700B26E55 /* sense_iosApp.swift in Sources */,
+				71757C1927D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2527CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				714E66DE27D37DF600FC32B6 /* ChatView.swift in Sources */,
+				71757C1F27D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66DB27D37C1F00FC32B6 /* Message.swift in Sources */,
+				714E66D827D25EBF00FC32B6 /* ChatRow.swift in Sources */,
+				71757C1227D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +422,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71757BF727CF8A82005536B0 /* SeedPhrase.swift in Sources */,
+				71C22B3027CF7DC700B26E55 /* KeychainWalletStorage.swift in Sources */,
 				71C22B1927CE815700B26E55 /* ContentView.swift in Sources */,
+				71B2D19A27D247FF00253B4F /* HomeModel.swift in Sources */,
+				71757BFA27CFE91A005536B0 /* Model.swift in Sources */,
+				71757C1D27D12313005536B0 /* ChatlistView.swift in Sources */,
+				71757C0D27D0FDC0005536B0 /* ImportWalletView.swift in Sources */,
+				71757C0427D0F4CD005536B0 /* AppDelegate.swift in Sources */,
+				71757C0A27D0F6F3005536B0 /* OnboardingView.swift in Sources */,
 				71C22B1727CE815700B26E55 /* sense_iosApp.swift in Sources */,
+				71757C1A27D12274005536B0 /* ProfileView.swift in Sources */,
 				71C22B2627CE8A1300B26E55 /* MainViewModel.swift in Sources */,
+				714E66DF27D37DF600FC32B6 /* ChatView.swift in Sources */,
+				71757C2027D130CF005536B0 /* SolscanTokenModel.swift in Sources */,
+				714E66DC27D37C1F00FC32B6 /* Message.swift in Sources */,
+				714E66D927D25EBF00FC32B6 /* ChatRow.swift in Sources */,
+				71757C1327D10AD8005536B0 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +558,7 @@
 		};
 		71C22B1F27CE815700B26E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FFAAF2AF6D07DDA9A44162F /* Pods-sense-ios (iOS).debug.xcconfig */;
+			baseConfigurationReference = 25021DC69071D3B985B9A00F /* Pods-sense-ios (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +572,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +580,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michalsimik.sense-ios";
-				PRODUCT_NAME = "sense-ios";
+				PRODUCT_NAME = Sollama;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,7 +590,7 @@
 		};
 		71C22B2027CE815700B26E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02512C2F670D8E845E54588E /* Pods-sense-ios (iOS).release.xcconfig */;
+			baseConfigurationReference = 6428639AE8A0DFC1048DEC0F /* Pods-sense-ios (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +612,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michalsimik.sense-ios";
-				PRODUCT_NAME = "sense-ios";
+				PRODUCT_NAME = Sollama;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,7 +623,7 @@
 		};
 		71C22B2227CE815700B26E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25C8D8C32E6C3234DF0AF7C7 /* Pods-sense-ios (macOS).debug.xcconfig */;
+			baseConfigurationReference = D1F9070539F5E118FB91E76A /* Pods-sense-ios (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -503,7 +652,7 @@
 		};
 		71C22B2327CE815700B26E55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 094FE9BE9C6D3CE8541F2A33 /* Pods-sense-ios (macOS).release.xcconfig */;
+			baseConfigurationReference = 6410275291F6CDEDAB094405 /* Pods-sense-ios (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +710,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		71757C1427D10E65005536B0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+		71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ajamaica/Solana.Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		714E66D327D25BDF00FC32B6 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		714E66D527D25BDF00FC32B6 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 714E66D227D25BDF00FC32B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		71757C1527D10E65005536B0 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71757C1427D10E65005536B0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		71C22B2827CE8C6500B26E55 /* RxSolana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */;
+			productName = RxSolana;
+		};
+		71C22B2A27CE8C6500B26E55 /* Solana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71C22B2727CE8C6500B26E55 /* XCRemoteSwiftPackageReference "Solana" */;
+			productName = Solana;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71C22B0127CE815600B26E55 /* Project object */;
 }
