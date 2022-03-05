@@ -1,2 +1,2 @@
-# sense-ios
- Sense - solana IM platform
+# Solamma-ios
+ Solamma - Solana IM platform and social tool
